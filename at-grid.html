@@ -106,7 +106,7 @@
       color: white;
     }
 
-    .grid .s-4 .x {
+    .grid>*>.x {
       background-color: white;
       color: #227ef7;
     }
@@ -268,26 +268,34 @@
           </div>
         </div>
         <div class="grid">
-          <div class="s-4 pad-s">
+          <div class="s-6 l-3 pad-0">
+            <p>.pad-0</p>
+          </div>
+          <div class="s-6 l-3 pad-s">
             <p>.pad-s</p>
           </div>
-          <div class="s-4 pad-m">
+          <div class="s-6 l-3 pad-m">
             <p>.pad-m</p>
           </div>
-          <div class="s-4 pad-l">
+          <div class="s-6 l-3 pad-l">
             <p>.pad-l</p>
           </div>
-          <div class="s-4 pad-s">
+          <div class="s-6 l-3">
+            <div class="x mar-0">
+              .mar-0
+            </div>
+          </div>
+          <div class="s-6 l-3">
             <div class="x mar-s">
               .mar-s
             </div>
           </div>
-          <div class="s-4 pad-s">
+          <div class="s-6 l-3">
             <div class="x mar-m">
               .mar-m
             </div>
           </div>
-          <div class="s-4 pad-s">
+          <div class="s-6 l-3">
             <div class="x mar-l">
               .mar-l
             </div>
@@ -321,7 +329,27 @@
     <div class="container mt75">
       <div class="col-12">
         <div class="codeblock">
-          <pre><code class="hljs bash"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$small</span>-<span class="hljs-built_in">break</span>:	480px <span class="hljs-comment">#Breakpoint for small classes (s-*)</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$medium</span>-<span class="hljs-built_in">break</span>: 960px <span class="hljs-comment">#Breakpoint for medium classes (m-*)</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$border</span>-color: black <span class="hljs-comment">#Border color for b-1s class</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$grid</span>-size: 12 <span class="hljs-comment">#Size of grid</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$small</span>-prefix: s <span class="hljs-comment">#Prefix for small classes</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$medium</span>-prefix: m	<span class="hljs-comment">#Prefix for medium classes</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="7"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$large</span>-prefix: l <span class="hljs-comment">#Prefix for large classes</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="8"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$margin</span>-prefix: mar <span class="hljs-comment">#Prefix for margin classes</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="9"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$padding</span>-prefix: pad <span class="hljs-comment">#Prefix for padding classes</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="10"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-variable">$gaps</span>: (0: 0, s: 8px, m: 16px, l: 24px) <span class="hljs-comment">#Map for margin and padding classes with suffix and values</span></div></td></tr></tbody></table></code></pre>
+          <pre><code class="hljs bash"><table class="hljs-ln"><tbody>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-code">
+            <div class="hljs-ln-line"><span class="hljs-variable">$small-break</span><span class="hljs-sad">: 480px </span><span class="hljs-comment">#Breakpoint for small classes (s-*)</span></div></td></tr>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-code">
+              <div class="hljs-ln-line"><span class="hljs-variable">$medium-break</span><span class="hljs-sad">: 960px </span><span class="hljs-comment">#Breakpoint for medium classes (m-*)</span></div></td></tr>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-code">
+              <div class="hljs-ln-line"><span class="hljs-variable">$border-color</span><span class="hljs-sad">: black </span><span class="hljs-comment">#Border color for b-1s class</span></div></td></tr>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-code">
+              <div class="hljs-ln-line"><span class="hljs-variable">$grid-size</span><span class="hljs-sad">: 12 </span><span class="hljs-comment">#Size of grid</span></div></td></tr>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-code">
+              <div class="hljs-ln-line"><span class="hljs-variable">$small-prefix</span><span class="hljs-sad">: s </span><span class="hljs-comment">#Prefix for small classes</span></div></td></tr>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-code">
+              <div class="hljs-ln-line"><span class="hljs-variable">$medium-prefix</span><span class="hljs-sad">: m </span><span class="hljs-comment">#Prefix for medium classes</span></div></td></tr>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="7"></div></td><td class="hljs-ln-code">
+              <div class="hljs-ln-line"><span class="hljs-variable">$large-prefix</span><span class="hljs-sad">: l </span><span class="hljs-comment">#Prefix for large classes</span></div></td></tr>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="8"></div></td><td class="hljs-ln-code">
+              <div class="hljs-ln-line"><span class="hljs-variable">$margin-prefix</span><span class="hljs-sad">: mar </span><span class="hljs-comment">#Prefix for margin classes</span></div></td></tr>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="9"></div></td><td class="hljs-ln-code">
+              <div class="hljs-ln-line"><span class="hljs-variable">$padding-prefix</span><span class="hljs-sad">: pad <span><span class="hljs-comment">#Prefix for padding classes</span></div></td></tr>
+            <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="10"></div></td><td class="hljs-ln-code">
+              <div class="hljs-ln-line"><span class="hljs-variable">$gaps</span><span class="hljs-sad">: (0: 0, s: 8px, m: 16px, l: 24px) </span><span class="hljs-comment">#Map for margin and padding classes with suffix and values</span></div></td></tr></tbody></table></code></pre>
         </div>
       </div>
     </div>
